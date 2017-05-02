@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<title>Login</title>
+<form name="form" method="post">
+<h1>Login</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label>Username </label>
+                </td>
+                <td>
+                    <input name="username" type="text" value="{{ username }}">
+                </td>
+                <td>
+                    <span class="error">{{ error.username_error }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password </label>
+                </td>
+                <td>
+                    <input name="password" type="password">
+                </td>
+                <td>
+                    <span class="error">{{ error.password_error }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Verify Password </label>
+                </td>
+                <td>
+                    <input name="verify" type="password">
+                </td>
+                <td>
+                    <span class="error">{{ error.verify_error }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email (optional) </label>
+                </td>
+                <td>
+                    <input name="email" type="text" value="{{ email }}">
+                </td>
+                <td>
+                    <span class="error">{{ error.email_error }}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="submit">
+</form>
+
+{% endblock %}
