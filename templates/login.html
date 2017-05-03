@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<title>Login</title>
+<title>login</title>
 <form name="form" method="post">
-<h1>Login</h1>
+<h1>login</h1>
     <table>
         <tbody>
             <tr>
                 <td>
-                    <label for="username">Username </label>
+                    <label for="username">username </label>
                 </td>
                 <td>
                     <input name="username" type="text" value="{{ username }}">
@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="password">Password </label>
+                    <label for="password">password </label>
                 </td>
                 <td>
                     <input name="password" type="password">
@@ -31,7 +31,7 @@
             </tr>
         </tbody>
     </table>
-    <input type="submit">
+    <input type="submit" name="submit" value="submit">
 </form>
 
 {% endblock %}
