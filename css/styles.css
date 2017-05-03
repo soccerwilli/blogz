@@ -5,6 +5,10 @@ body {
     padding: 10px;
 }
 
+h5 {
+    font-style: italic;
+}
+
 .error {
     color: red;
 }
