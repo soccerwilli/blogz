@@ -31,11 +31,14 @@ textarea {
 
 input[type=submit] {
     font-size: 24px;
-    float: middle;
+
 }
 
 hr {
     margin: 20px auto;
+    background-color: red;
+    color: red;
+    border-color: black;
 }
 
 .post + .post {
@@ -69,6 +72,6 @@ nav ul li {
 }
 
 nav #user-account {
-    text-align: right;
     float: right;
+    align-items: flex-end;
 }
